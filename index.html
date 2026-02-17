@@ -3,117 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GhostProof – Stop Getting Ghosted</title>
+<title>GhostProof</title>
 <style>
-  /* Reset */
-  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif; }
-
+  /* Base UI matching Base44 dark theme */
   body {
-    background-color: #0b0b0b; /* Dark masculine background */
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    padding: 20px;
-  }
-
-  h1 {
-    color: #39ff14; /* Neon green accent matching app theme */
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    text-shadow: 0 0 10px #39ff14;
-  }
-
-  h2 {
-    color: #39ff14;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: center;
-    text-shadow: 0 0 8px #39ff14;
-  }
-
-  p {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #0a0a0e;
     color: #e0e0e0;
     text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
   }
-
-  ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
   }
-
-  .cta-button {
+  h1 {
+    font-size: 48px;
+    color: #39ff14;
+    margin-bottom: 16px;
+    text-shadow: 0 0 12px rgba(57,255,20,0.5);
+  }
+  p {
+    font-size: 18px;
+    color: #c0c0c0;
+    margin-bottom: 24px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 12px 8px;
+    transition: 0.2s ease;
+  }
+  .btn-primary {
+    background-color: #39ff14;
+    color: #000000;
+    box-shadow: 0 0 18px rgba(57,255,20,0.6);
+  }
+  .btn-primary:hover {
+    background-color: #2cff00;
+  }
+  .btn-outline {
+    border: 2px solid #39ff14;
+    color: #39ff14;
+  }
+  .btn-outline:hover {
     background-color: #39ff14;
     color: #000;
-    font-weight: bold;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-    box-shadow: 0 0 15px #39ff14;
-    transition: 0.3s;
   }
-
-  .cta-button:hover {
-    box-shadow: 0 0 25px #39ff14;
-    transform: scale(1.05);
-  }
-
   .section {
-    max-width: 600px;
-    margin-bottom: 40px;
+    margin-top: 60px;
   }
-
+  .section h2 {
+    font-size: 28px;
+    color: #39ff14;
+    margin-bottom: 12px;
+  }
+  .section p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #b8b8b8;
+  }
   .example {
-    background-color: #111;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 10px;
+    background-color: #111216;
+    border-left: 4px solid #39ff14;
+    padding: 16px;
+    margin-top: 20px;
     text-align: left;
-    box-shadow: 0 0 10px #39ff14;
+    color: #d0d0d0;
+    font-size: 16px;
   }
-
-  .example p {
-    margin-bottom: 5px;
+  footer {
+    padding: 30px 0;
+    font-size: 14px;
+    color: #777;
   }
 </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <div class="section">
-    <h1>Stop Getting Ghosted. Send Better Replies Instantly.</h1>
-    <p>AI built for men who overthink texts.</p>
-    <a class="cta-button" href="/app">Try 3 Free Chats</a>
-  </div>
+<div class="container">
 
-  <!-- Problem Section -->
-  <div class="section">
-    <h2>Why GhostProof?</h2>
-    <p>You overthink. You type, delete, type again. You lose momentum.<br>
-    GhostProof gives clarity in seconds.</p>
-  </div>
+  <!-- Hero -->
+  <h1>GhostProof</h1>
+  <p>Stop getting ghosted. Send confident replies instantly.</p>
+  <a href="https://yourapp.base44.com" target="_blank" class="btn btn-primary">Try 3 Free Chats</a>
+  <a href="https://yourapp.base44.com" target="_blank" class="btn btn-outline">Open App</a>
 
-  <!-- How It Works Section -->
+  <!-- How It Works -->
   <div class="section">
     <h2>How It Works</h2>
-    <ol>
-      <li>Paste her message</li>
-      <li>Get deep analysis</li>
-      <li>Choose strongest reply</li>
-    </ol>
+    <p>Paste her message. GhostProof analyzes tone, interest, and intent.</p>
+    <p>Get 3 reply suggestions that keep your voice and increase clarity.</p>
   </div>
 
-  <!-- Example Section -->
+  <!-- Example -->
   <div class="section">
     <h2>Example</h2>
     <div class="example">
@@ -123,10 +112,9 @@
     </div>
   </div>
 
-  <!-- Final CTA Section -->
-  <div class="section">
-    <a class="cta-button" href="/app">Start Free Now</a>
-  </div>
+</div>
+
+<footer>© 2026 GhostProof</footer>
 
 </body>
 </html>
